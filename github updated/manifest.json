@@ -1,0 +1,17 @@
+{
+  "name": "Custom Chrome Extension",
+  "description": "TestExtension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://*.w3schools.com/*"]
+      ,"css": ["css/testcss.css"]
+      ,"js": ["scripts/test.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "test.html",
+    "default_icon": "TestExtension.png"
+  }  
+}
